@@ -18,12 +18,18 @@ function submitForm() {
     $("#monaResult").text("Mona: " + monaPoll);
     $("#tenleyResult").text("Tenley: " + tenleyPoll);
 
-    // Hide the form and show the results
+    // Hide form and show results
     $("#poll").hide();
-    $("#results").addClass("mx-5").show();
+    if (window.innerWidth < 992) {
+        $("#results").addClass("mx-2").show();
+    }
+    else {
+        $("#results").addClass("mx-4").show();
+    }
+
     $('#submitBtn').prop('disabled', true);
 }
-
+// ensures that there is input in both
 function validateForm() {
     const nameInput = $("#name").val();
     const favCatInput = $("input[name='favCat']:checked").val();
@@ -36,3 +42,16 @@ function validateForm() {
         $('#submitBtn').prop('disabled', true);
     }
 }
+function updateClassBasedOnScreenSize() {
+
+    if (window.innerWidth < 992) {
+        $("#results").removeClass("mx-4");
+        $("#results").addClass("mx-2");
+    } else {
+        $("#results").removeClass("mx-2");
+        $("#results").addClass("mx-4");
+    }
+}
+
+updateClassBasedOnScreenSize();
+window.addEventListener("resize", updateClassBasedOnScreenSize);
