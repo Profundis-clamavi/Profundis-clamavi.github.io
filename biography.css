@@ -21,6 +21,7 @@
     margin-left: 350px;
     padding-top: 75px;
     margin-bottom: 50px;
+    margin-right: 10px;
 }
 
 
@@ -48,16 +49,6 @@ header {
     }
 }
 
-/* @media (width < 992px) {
-
-    #mainContent {
-        margin-left: 170px;
-    }
-
-    .sidenav {
-        width: 150px !important;
-    }
-} */
 
 @media only screen and (max-width: 992px) {
     #mainContent {
