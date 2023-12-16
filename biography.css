@@ -48,7 +48,7 @@ header {
     }
 }
 
-@media (width < 992px) {
+/* @media (width < 992px) {
 
     #mainContent {
         margin-left: 170px;
@@ -57,19 +57,15 @@ header {
     .sidenav {
         width: 150px !important;
     }
-}
+} */
 
-@media only screen and (width < 767px) {
+@media only screen and (max-width: 992px) {
     #mainContent {
         margin-left: 170px;
     }
 
     .sidenav {
         width: 150px !important;
-    }
-
-    body {
-        text-size-adjust: 100%;
     }
 
     body {
