@@ -52,11 +52,11 @@ header {
 
 @media only screen and (max-width: 992px) {
     #mainContent {
-        margin-left: 170px;
+        margin-left: 120px;
     }
 
     .sidenav {
-        width: 150px !important;
+        width: 110px !important;
     }
 
     body {
@@ -67,5 +67,6 @@ header {
         margin-bottom: 75px;
         padding-top: 100px;
     }
+
 
 }
