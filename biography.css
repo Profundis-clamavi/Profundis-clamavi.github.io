@@ -58,6 +58,7 @@ header {
         width: 150px !important;
     }
 }
+
 @media only screen and (max-width: 767px) {
     #mainContent {
         margin-left: 170px;
@@ -66,4 +67,18 @@ header {
     .sidenav {
         width: 150px !important;
     }
+
+    body {
+        text-size-adjust: 100%;
+    }
+
+    body {
+        font-size: 25px !important;
+    }
+
+    #mainContent {
+        margin-bottom: 75px;
+        padding-top: 100px;
+    }
+
 }
